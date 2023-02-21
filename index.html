@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id = "root">
+    <div>첫번째</div>
+    <div id = "sec">두번째</div>
+    <div>세번째</div>
+  </div>
+  <script>
+    let a = document.getElementById('sec');
+
+    a.setAttribute('style', 'font-size : 40px; color:blue; background-color:green;');
+    
+    let b = document.getElementsByTagName('div')[3];
+    b.setAttribute('style', 'color:red;');
+  </script>
+</body>
+</html>
